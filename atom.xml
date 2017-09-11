@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.xiehongchao.cn/"/>
-  <updated>2017-07-14T12:28:09.686Z</updated>
+  <updated>2017-09-10T16:47:52.673Z</updated>
   <id>http://blog.xiehongchao.cn/</id>
   
   <author>
@@ -16,65 +16,173 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello Hexo</title>
-    <link href="http://blog.xiehongchao.cn/2017/07/14/Hello-Hexo/"/>
-    <id>http://blog.xiehongchao.cn/2017/07/14/Hello-Hexo/</id>
-    <published>2017-07-14T12:28:09.000Z</published>
-    <updated>2017-07-14T12:28:09.686Z</updated>
+    <title>Net值类型和引用类型</title>
+    <link href="http://blog.xiehongchao.cn/2017/09/11/netvaluetype/"/>
+    <id>http://blog.xiehongchao.cn/2017/09/11/netvaluetype/</id>
+    <published>2017-09-10T16:26:27.000Z</published>
+    <updated>2017-09-10T16:47:52.673Z</updated>
     
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>My New Post</title>
-    <link href="http://blog.xiehongchao.cn/2017/07/14/My-New-Post/"/>
-    <id>http://blog.xiehongchao.cn/2017/07/14/My-New-Post/</id>
-    <published>2017-07-14T11:26:47.000Z</published>
-    <updated>2017-07-14T11:28:29.318Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>少室山稍等稍等所是多少</strong></p>
-<pre><code>Console.WriteLine
-</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;少室山稍等稍等所是多少&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Console.WriteLine
-&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://blog.xiehongchao.cn/2017/07/14/hello-world/"/>
-    <id>http://blog.xiehongchao.cn/2017/07/14/hello-world/</id>
-    <published>2017-07-14T11:24:11.986Z</published>
-    <updated>2017-07-14T11:24:11.986Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<p>Net面试题之值类型和引用类型</p>
+<blockquote>
+<p>在C#中值类型的变量直接存储数据，而引用类型的变量持有的是数据的引用，数据存储在数据堆中。</p>
+</blockquote>
+<ul>
+<li><p>值类型（value type）：byte，short，int，long，float，double，decimal，char，bool 和 struct 统称为值类型。值类型变量声明后，不管是否已经赋值，编译器为其分配内存</p>
+</li>
+<li><p>引用类型（reference type）：string 和 class统称为引用类型。当声明一个类时，只在栈中分配一小片内存用于容纳一个地址，而此时并没有为其分配堆上的内存空间。当使用 new 创建一个类的实例时，分配堆上的空间，**并把堆上空间的地址保存到栈上分配的小片空间中</p>
+</li>
+</ul>
+<h1 id="值类型"><a href="#值类型" class="headerlink" title="值类型"></a>值类型</h1><blockquote>
+<p>C#所有值类型均隐式派生自<strong>System.ValueType</strong>  </p>
+</blockquote>
+<ul>
+<li>结构体：struct（直接派生于System.ValueType）；</li>
+<li>数值类型：</li>
+<li><p>整型：sbyte（System.SByte的别名），short（System.Int16），<br>int（System.Int32），long（System.Int64），<br>byte（System.Byte），ushort（System.UInt16），<br>uint（System.UInt32），ulong（System.UInt64），<br>char（System.Char）；</p>
+</li>
+<li><p>浮点型：float（System.Single），double（System.Double）；</p>
+</li>
+<li>用于财务计算的高精度decimal型：decimal（System.Decimal）。</li>
+<li>bool型：bool（System.Boolean的别名）；</li>
+<li>用户定义的结构体（派生于System.ValueType）。</li>
+<li>枚举：enum（派生于System.Enum）；</li>
+<li>可空类型（派生于System.Nullable<t>泛型结构体，T?实际上是System.Nullable<t>的别名）   </t></t></li>
+</ul>
+<hr>
+<h1 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h1><ul>
+<li>数组（派生于System.Array）</li>
+<li>用户用定义的以下类型：</li>
+<li>类：class（派生于System.Object）</li>
+<li>接口：interface（接口不是一个“东西”，所以不存在派生于何处的问题。</li>
+<li>Anders在《C# Programming Language》中说，接口只是表示一种约定[contract]）</li>
+<li>委托：delegate（派生于System.Delegate）。</li>
+<li>object（System.Object的别名）</li>
+<li>字符串：string（System.String的别名）</li>
+</ul>
+<hr>
+<h1 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h1><ol>
+<li>值类型都是密封（seal）的，所以无法派生出新的值类型。</li>
+<li>型和值类型都继承自System.Object类  </li>
+</ol>
+<h1 id="不同点"><a href="#不同点" class="headerlink" title="不同点"></a>不同点</h1><ol>
+<li>有的引用类型都直接从System.Object继承，而值类型则继承其子类，<br>即直接继承System.ValueType。System.ValueType直接派生于System.Object。<br>即System.ValueType本身是一个类类型，而不是值类型。<br>其关键在于ValueType重写了Equals()方法，从而对值类型按照实例的值来比较，而不是引用地址来比较</li>
+<li>型可以派生出新的类型，而值类型不能</li>
+<li>型可以包含null值，值类型不能（可空类型功能允许将 null 赋给值类型）</li>
+<li>型变量的赋值只复制对对象的引用，而不复制对象本身。<br>值类型变量赋给另一个值类型变量时，将复制包含的值。</li>
+</ol>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;Net面试题之值类型和引用类型&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在C#中值类型的变量直接存储数据，而引用类型的变量持有的是数据的引用，数据存储在数据堆中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;值类型（value type）：byte，shor
     
     </summary>
     
+      <category term="Net" scheme="http://blog.xiehongchao.cn/categories/Net/"/>
+    
+    
+      <category term="Net" scheme="http://blog.xiehongchao.cn/tags/Net/"/>
+    
+      <category term="面试" scheme="http://blog.xiehongchao.cn/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>redis安装</title>
+    <link href="http://blog.xiehongchao.cn/2017/09/10/redisinstall/"/>
+    <id>http://blog.xiehongchao.cn/2017/09/10/redisinstall/</id>
+    <published>2017-09-10T10:29:42.000Z</published>
+    <updated>2017-09-10T16:24:38.614Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><blockquote>
+<p>wget <a href="http://download.redis.io/releases/redis-4.0.1.tar.gz" target="_blank" rel="external">http://download.redis.io/releases/redis-4.0.1.tar.gz</a></p>
+</blockquote>
+<h2 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h2><blockquote>
+<p>以.tar.gz/.tgz为扩展名的文件:<br>tar xvzf redis-4.0.1.tar.gz<br>gzip -dc redis-4.0.1.tar.gz | tar xvf - </p>
+</blockquote>
+<h1 id="进入解压后的目录"><a href="#进入解压后的目录" class="headerlink" title="进入解压后的目录"></a>进入解压后的目录</h1><pre><code>cd redis
+cd utils
+sh install_server.sh
+</code></pre><p>执行安装<br>可先修改默认配置<br>Redis目录下redis.conf<br>安装之后 输出配置信息</p>
+<blockquote>
+<p>Selected config:<br>Port           : 6379<br>Config file    : /etc/redis/6379.conf<br>Log file       : /var/log/redis_6379.log<br>Data dir       : /var/lib/redis/6379<br>Executable     : /usr/local/bin/redis-server<br>Cli Executable : /usr/local/bin/redis-cli  </p>
+</blockquote>
+<h1 id="自定义登录脚本Redis-sh"><a href="#自定义登录脚本Redis-sh" class="headerlink" title="自定义登录脚本Redis.sh"></a>自定义登录脚本Redis.sh</h1><p>#/bin/sh</p>
+<p>cd redis<br>redis-cli -a password</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;wget &lt;a href=&quot;http://download.redis.io/releases/redis-4.0
+    
+    </summary>
+    
+      <category term="Redis" scheme="http://blog.xiehongchao.cn/categories/Redis/"/>
+    
+    
+      <category term="Redis" scheme="http://blog.xiehongchao.cn/tags/Redis/"/>
+    
+      <category term="Centos" scheme="http://blog.xiehongchao.cn/tags/Centos/"/>
+    
+      <category term="Linux" scheme="http://blog.xiehongchao.cn/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo简单命令</title>
+    <link href="http://blog.xiehongchao.cn/2017/09/06/hexocommand/"/>
+    <id>http://blog.xiehongchao.cn/2017/09/06/hexocommand/</id>
+    <published>2017-09-06T13:41:01.000Z</published>
+    <updated>2017-09-10T16:19:55.912Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="hexo-命令"><a href="#hexo-命令" class="headerlink" title="hexo 命令"></a>hexo 命令</h1><ul>
+<li>hexo new “postName” #新建文章</li>
+<li>hexo new page “pageName” #新建页面</li>
+<li>hexo generate #生成静态页面至public目录</li>
+<li>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</li>
+<li>hexo deploy #将.deploy目录部署到GitHub</li>
+<li>hexo help  # 查看帮助</li>
+<li>hexo version  #查看Hexo的版本</li>
+<li>hexo deploy -g  #生成加部署</li>
+<li>hexo server -g  #生成加预览</li>
+</ul>
+<h1 id="命令的简写"><a href="#命令的简写" class="headerlink" title="命令的简写"></a>命令的简写</h1><ul>
+<li>hexo n == hexo new</li>
+<li>hexo g == hexo generate</li>
+<li>hexo s == hexo server</li>
+<li>hexo d == hexo deploy</li>
+</ul>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><blockquote>
+<p>title: hexo command<br>date: 2017-09-06 21:41:01<br>tags:</p>
+<pre><code>- hexo
+- 命令
+- 其他
+</code></pre><p>categories: 其他</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;hexo-命令&quot;&gt;&lt;a href=&quot;#hexo-命令&quot; class=&quot;headerlink&quot; title=&quot;hexo 命令&quot;&gt;&lt;/a&gt;hexo 命令&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;hexo new “postName” #新建文章&lt;/li&gt;
+&lt;li&gt;hexo new 
+    
+    </summary>
+    
+      <category term="其他" scheme="http://blog.xiehongchao.cn/categories/other/"/>
+    
+    
+      <category term="hexo" scheme="http://blog.xiehongchao.cn/tags/hexo/"/>
+    
+      <category term="命令" scheme="http://blog.xiehongchao.cn/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+      <category term="其他" scheme="http://blog.xiehongchao.cn/tags/%E5%85%B6%E4%BB%96/"/>
     
   </entry>
   

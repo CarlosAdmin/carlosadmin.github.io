@@ -13,23 +13,24 @@
     
     
     
-    <title>Hello World | Carlos.Xie | 4529298@qq.com</title>
+    <title>Net值类型和引用类型 | Carlos.Xie | 4529298@qq.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="keywords" content="Net,面试">
+    <meta name="description" content="Net面试题之值类型和引用类型  在C#中值类型的变量直接存储数据，而引用类型的变量持有的是数据的引用，数据存储在数据堆中。   值类型（value type）：byte，short，int，long，float，double，decimal，char，bool 和 struct 统称为值类型。值类型变量声明后，不管是否已经赋值，编译器为其分配内存  引用类型（reference type）：st">
+<meta name="keywords" content="Net,面试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://blog.xiehongchao.cn/2017/07/14/hello-world/index.html">
+<meta property="og:title" content="Net值类型和引用类型">
+<meta property="og:url" content="http://blog.xiehongchao.cn/2017/09/11/netvaluetype/index.html">
 <meta property="og:site_name" content="Carlos.Xie">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-07-14T11:24:11.986Z">
+<meta property="og:description" content="Net面试题之值类型和引用类型  在C#中值类型的变量直接存储数据，而引用类型的变量持有的是数据的引用，数据存储在数据堆中。   值类型（value type）：byte，short，int，long，float，double，decimal，char，bool 和 struct 统称为值类型。值类型变量声明后，不管是否已经赋值，编译器为其分配内存  引用类型（reference type）：st">
+<meta property="og:updated_time" content="2017-09-10T16:47:52.673Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Net值类型和引用类型">
+<meta name="twitter:description" content="Net面试题之值类型和引用类型  在C#中值类型的变量直接存储数据，而引用类型的变量持有的是数据的引用，数据存储在数据堆中。   值类型（value type）：byte，short，int，long，float，double，decimal，char，bool 和 struct 统称为值类型。值类型变量声明后，不管是否已经赋值，编译器为其分配内存  引用类型（reference type）：st">
     
         <link rel="alternate" type="application/atom+xml" title="Carlos.Xie" href="/atom.xml">
     
@@ -120,7 +121,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Hello World</div>
+        <div class="flex-col header-title ellipsis">Net值类型和引用类型</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -142,13 +143,15 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Hello World</h1>
+        <h1 class="title">Net值类型和引用类型</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-07-14T11:24:11.986Z" itemprop="datePublished" class="page-time">
-  2017-07-14
+                <time datetime="2017-09-10T16:26:27.000Z" itemprop="datePublished" class="page-time">
+  2017-09-11
 </time>
 
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Net/">Net</a></li></ul>
 
             
         </h5>
@@ -165,19 +168,21 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-number">1.</span> <span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#值类型"><span class="post-toc-number">1.</span> <span class="post-toc-text">值类型</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#引用类型"><span class="post-toc-number">2.</span> <span class="post-toc-text">引用类型</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#相同点"><span class="post-toc-number">3.</span> <span class="post-toc-text">相同点</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#不同点"><span class="post-toc-number">4.</span> <span class="post-toc-text">不同点</span></a></li></ol>
         </nav>
     </aside>
     
-<article id="post-hello-world"
+<article id="post-netvaluetype"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Hello World</h1>
+        <h1 class="post-card-title">Net值类型和引用类型</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-07-14 19:24:11" datetime="2017-07-14T11:24:11.986Z"  itemprop="datePublished">2017-07-14</time>
+            <time class="post-time" title="2017-09-11 00:26:27" datetime="2017-09-10T16:26:27.000Z"  itemprop="datePublished">2017-09-11</time>
 
             
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Net/">Net</a></li></ul>
+
 
 
             
@@ -188,15 +193,54 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+            <p>Net面试题之值类型和引用类型</p>
+<blockquote>
+<p>在C#中值类型的变量直接存储数据，而引用类型的变量持有的是数据的引用，数据存储在数据堆中。</p>
+</blockquote>
+<ul>
+<li><p>值类型（value type）：byte，short，int，long，float，double，decimal，char，bool 和 struct 统称为值类型。值类型变量声明后，不管是否已经赋值，编译器为其分配内存</p>
+</li>
+<li><p>引用类型（reference type）：string 和 class统称为引用类型。当声明一个类时，只在栈中分配一小片内存用于容纳一个地址，而此时并没有为其分配堆上的内存空间。当使用 new 创建一个类的实例时，分配堆上的空间，**并把堆上空间的地址保存到栈上分配的小片空间中</p>
+</li>
+</ul>
+<h1 id="值类型"><a href="#值类型" class="headerlink" title="值类型"></a>值类型</h1><blockquote>
+<p>C#所有值类型均隐式派生自<strong>System.ValueType</strong>  </p>
+</blockquote>
+<ul>
+<li>结构体：struct（直接派生于System.ValueType）；</li>
+<li>数值类型：</li>
+<li><p>整型：sbyte（System.SByte的别名），short（System.Int16），<br>int（System.Int32），long（System.Int64），<br>byte（System.Byte），ushort（System.UInt16），<br>uint（System.UInt32），ulong（System.UInt64），<br>char（System.Char）；</p>
+</li>
+<li><p>浮点型：float（System.Single），double（System.Double）；</p>
+</li>
+<li>用于财务计算的高精度decimal型：decimal（System.Decimal）。</li>
+<li>bool型：bool（System.Boolean的别名）；</li>
+<li>用户定义的结构体（派生于System.ValueType）。</li>
+<li>枚举：enum（派生于System.Enum）；</li>
+<li>可空类型（派生于System.Nullable<t>泛型结构体，T?实际上是System.Nullable<t>的别名）   </t></t></li>
+</ul>
+<hr>
+<h1 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h1><ul>
+<li>数组（派生于System.Array）</li>
+<li>用户用定义的以下类型：</li>
+<li>类：class（派生于System.Object）</li>
+<li>接口：interface（接口不是一个“东西”，所以不存在派生于何处的问题。</li>
+<li>Anders在《C# Programming Language》中说，接口只是表示一种约定[contract]）</li>
+<li>委托：delegate（派生于System.Delegate）。</li>
+<li>object（System.Object的别名）</li>
+<li>字符串：string（System.String的别名）</li>
+</ul>
+<hr>
+<h1 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h1><ol>
+<li>值类型都是密封（seal）的，所以无法派生出新的值类型。</li>
+<li>型和值类型都继承自System.Object类  </li>
+</ol>
+<h1 id="不同点"><a href="#不同点" class="headerlink" title="不同点"></a>不同点</h1><ol>
+<li>有的引用类型都直接从System.Object继承，而值类型则继承其子类，<br>即直接继承System.ValueType。System.ValueType直接派生于System.Object。<br>即System.ValueType本身是一个类类型，而不是值类型。<br>其关键在于ValueType重写了Equals()方法，从而对值类型按照实例的值来比较，而不是引用地址来比较</li>
+<li>型可以派生出新的类型，而值类型不能</li>
+<li>型可以包含null值，值类型不能（可空类型功能允许将 null 赋给值类型）</li>
+<li>型变量的赋值只复制对对象的引用，而不复制对象本身。<br>值类型变量赋给另一个值类型变量时，将复制包含的值。</li>
+</ol>
 
         </div>
 
@@ -204,7 +248,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-07-14T11:24:11.986Z" itemprop="dateUpdated">2017-07-14 19:24:11</time>
+    最后更新时间：<time datetime="2017-09-10T16:47:52.673Z" itemprop="dateUpdated">2017-09-11 00:47:52</time>
 </span><br>
 
 
@@ -229,6 +273,8 @@
 
         <div class="post-footer">
             
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Net/">Net</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/面试/">面试</a></li></ul>
+
 
             
 <div class="page-share-wrap">
@@ -237,7 +283,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&title=《Hello World》 — Carlos.Xie&pic=http://blog.xiehongchao.cn/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiehongchao.cn/2017/09/11/netvaluetype/&title=《Net值类型和引用类型》 — Carlos.Xie&pic=http://blog.xiehongchao.cn/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -247,22 +293,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&title=《Hello World》 — Carlos.Xie&source=Better Wife , Better Life" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiehongchao.cn/2017/09/11/netvaluetype/&title=《Net值类型和引用类型》 — Carlos.Xie&source=Better Wife , Better Life" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiehongchao.cn/2017/07/14/hello-world/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiehongchao.cn/2017/09/11/netvaluetype/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — Carlos.Xie&url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&via=http://blog.xiehongchao.cn" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Net值类型和引用类型》 — Carlos.Xie&url=http://blog.xiehongchao.cn/2017/09/11/netvaluetype/&via=http://blog.xiehongchao.cn" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiehongchao.cn/2017/09/11/netvaluetype/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -282,16 +328,16 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2017/07/14/My-New-Post/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">My New Post</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/09/10/redisinstall/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">redis安装</h4>
+      </a>
+    </div>
   
 </nav>
 
@@ -383,7 +429,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&title=《Hello World》 — Carlos.Xie&pic=http://blog.xiehongchao.cn/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiehongchao.cn/2017/09/11/netvaluetype/&title=《Net值类型和引用类型》 — Carlos.Xie&pic=http://blog.xiehongchao.cn/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -393,22 +439,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&title=《Hello World》 — Carlos.Xie&source=Better Wife , Better Life" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiehongchao.cn/2017/09/11/netvaluetype/&title=《Net值类型和引用类型》 — Carlos.Xie&source=Better Wife , Better Life" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiehongchao.cn/2017/07/14/hello-world/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiehongchao.cn/2017/09/11/netvaluetype/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — Carlos.Xie&url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&via=http://blog.xiehongchao.cn" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Net值类型和引用类型》 — Carlos.Xie&url=http://blog.xiehongchao.cn/2017/09/11/netvaluetype/&via=http://blog.xiehongchao.cn" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiehongchao.cn/2017/09/11/netvaluetype/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -419,7 +465,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACL0lEQVR42u3aS27DMAwFwNz/0um2AWr3kXTSWhqvDENxNF4Q/OjxiK/nt+voyfn68zdXf9W8MDAwbst4nl75mnyLR+/Pf/XD/2JgYGzASDZxtL66cvKGw+cYGBgY4zXnWz9PQDEwMDB6ATffRDVBxMDAwJgUsRNeEmRHxTMGBsbSjLzr/vn7t8w3MDAwbsV4Fq/kDdVQ3tvJy3swMDCWZuQBLkna8qZbXgbn+8HAwNiBkTfdqivzgUHypCLDwMBYh3HV2LLa6J/fH/IwMDAWYkyGiNXE8ar0EQMDYzdGNdRWj3/lpW/vXzAwMHZg5G366iaqpXKvbH7k59QwMDBuzjgKcJMjX3n52ht2vtxjYGAszUgSsmSjSck6KYZHXUMMDIwlGL2m26RJ1ytioyocAwNjOUY1CE5Sw+p2k9YbBgbGPow8vcsD9FVjzvJhCwwMjEUZvdZ8chgiHxhMQjYGBsbajOocsNfQrwb0/BNjYGDsw6hubl6gVkcIUSDGwMDYhtFMyOJAWU0xk/QRAwNjN0Y1TWwGx1Zw/2VEioGBsSXjvBD9g1Za9cgFBgbGEoxJsKs24PLvmo9RL4jZGBgY/57RC3PVNLGXLL5xwImBgXFDxmTEmB/nykeShcK1N03FwMC4LaPZjo9TzCQQTwpjDAwMjOTYVi9BrH6sywIuBgbGBozJgLN68CJaiYGBsQGjOgzIG2HVIUGeFGJgYOzDuOrYRBXTI40GmRgYGPdjfAE66rJQ6UOqTwAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJklEQVR42u3aQZKDMAwF0dz/0swBJjj9JSdVWM0qRWHw80KRLb1e+Lr+XXfP8OfXo17fuGTIkPFYxrW81tNaT4LcuXsPn5sMGTLmMEgovHt+PTkyCf6t2/syZMiQUZoi4a3vy5AhQ0aHgV4N0kpyR4YMGTJ46OSj0kTwp3txGTJkPJDBT91///sr9Q0ZMmQ8itEJmnzzmb4hnpUMGTKOZqQb1L1FSn4MRxZOhgwZ0xhpqEWfKbWFBVtWGTJkDGCsB/Aj+zTIdho+3gRcGTJkHM0oDm7Evc5iyZAhYw6DB1BSkuTNFruSThkyZMxh8EYHEhx5iwYPuEG3iAwZMo5jBMfuYakgfefeoCxDhoyTGCSYdj5cW1f+W4YMGXMY/UaHNHXjSSRaXBkyZIxhkE1jLWVMs1RyJ+4WkSFDxmMZ/UP5WstFGsSLfw8yZMg4gkF8aQqYhunWevNhMmTIeCyjhuRFSr7d5elgDJMhQ8YRDNJUwY/JdgX3dKwMGTImMDpFR96EsatR7M0cZMiQMYzBiwc8HSTv7xQkZMiQMYGRfv57VN6o8SbgypAh4zjGFV7pdjRtyyguqwwZMo5mpEUCcjBHwGmyuK3AKUOGjMcyOkG2uOEs5bDxJlaGDBnHMWoNW7XguLcUKkOGDBlpwE3Lk50SxeaAK0OGjEMZ26oT4PDuw5MyZMgYwKhtTXnA5QE6bcuQIUPGBEZr61g6yt+VUMqQIWMA4w80JpNhN9XRlAAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 

@@ -13,23 +13,24 @@
     
     
     
-    <title>Hello World | Carlos.Xie | 4529298@qq.com</title>
+    <title>redis安装 | Carlos.Xie | 4529298@qq.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="keywords" content="Redis,Centos,Linux">
+    <meta name="description" content="下载 wget http://download.redis.io/releases/redis-4.0.1.tar.gz  解压 以.tar.gz/.tgz为扩展名的文件:tar xvzf redis-4.0.1.tar.gzgzip -dc redis-4.0.1.tar.gz | tar xvf -   进入解压后的目录cd redis cd utils sh install_server.s">
+<meta name="keywords" content="Redis,Centos,Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://blog.xiehongchao.cn/2017/07/14/hello-world/index.html">
+<meta property="og:title" content="redis安装">
+<meta property="og:url" content="http://blog.xiehongchao.cn/2017/09/10/redisinstall/index.html">
 <meta property="og:site_name" content="Carlos.Xie">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-07-14T11:24:11.986Z">
+<meta property="og:description" content="下载 wget http://download.redis.io/releases/redis-4.0.1.tar.gz  解压 以.tar.gz/.tgz为扩展名的文件:tar xvzf redis-4.0.1.tar.gzgzip -dc redis-4.0.1.tar.gz | tar xvf -   进入解压后的目录cd redis cd utils sh install_server.s">
+<meta property="og:updated_time" content="2017-09-10T16:24:38.614Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="redis安装">
+<meta name="twitter:description" content="下载 wget http://download.redis.io/releases/redis-4.0.1.tar.gz  解压 以.tar.gz/.tgz为扩展名的文件:tar xvzf redis-4.0.1.tar.gzgzip -dc redis-4.0.1.tar.gz | tar xvf -   进入解压后的目录cd redis cd utils sh install_server.s">
     
         <link rel="alternate" type="application/atom+xml" title="Carlos.Xie" href="/atom.xml">
     
@@ -120,7 +121,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Hello World</div>
+        <div class="flex-col header-title ellipsis">redis安装</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -142,13 +143,15 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Hello World</h1>
+        <h1 class="title">redis安装</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-07-14T11:24:11.986Z" itemprop="datePublished" class="page-time">
-  2017-07-14
+                <time datetime="2017-09-10T10:29:42.000Z" itemprop="datePublished" class="page-time">
+  2017-09-10
 </time>
 
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Redis/">Redis</a></li></ul>
 
             
         </h5>
@@ -165,19 +168,21 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-number">1.</span> <span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#下载"><span class="post-toc-number">1.</span> <span class="post-toc-text">下载</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解压"><span class="post-toc-number">2.</span> <span class="post-toc-text">解压</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#进入解压后的目录"><span class="post-toc-number"></span> <span class="post-toc-text">进入解压后的目录</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#自定义登录脚本Redis-sh"><span class="post-toc-number"></span> <span class="post-toc-text">自定义登录脚本Redis.sh</span></a>
         </nav>
     </aside>
     
-<article id="post-hello-world"
+<article id="post-redisinstall"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Hello World</h1>
+        <h1 class="post-card-title">redis安装</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-07-14 19:24:11" datetime="2017-07-14T11:24:11.986Z"  itemprop="datePublished">2017-07-14</time>
+            <time class="post-time" title="2017-09-10 18:29:42" datetime="2017-09-10T10:29:42.000Z"  itemprop="datePublished">2017-09-10</time>
 
             
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Redis/">Redis</a></li></ul>
+
 
 
             
@@ -188,15 +193,21 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+            <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><blockquote>
+<p>wget <a href="http://download.redis.io/releases/redis-4.0.1.tar.gz" target="_blank" rel="external">http://download.redis.io/releases/redis-4.0.1.tar.gz</a></p>
+</blockquote>
+<h2 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h2><blockquote>
+<p>以.tar.gz/.tgz为扩展名的文件:<br>tar xvzf redis-4.0.1.tar.gz<br>gzip -dc redis-4.0.1.tar.gz | tar xvf - </p>
+</blockquote>
+<h1 id="进入解压后的目录"><a href="#进入解压后的目录" class="headerlink" title="进入解压后的目录"></a>进入解压后的目录</h1><pre><code>cd redis
+cd utils
+sh install_server.sh
+</code></pre><p>执行安装<br>可先修改默认配置<br>Redis目录下redis.conf<br>安装之后 输出配置信息</p>
+<blockquote>
+<p>Selected config:<br>Port           : 6379<br>Config file    : /etc/redis/6379.conf<br>Log file       : /var/log/redis_6379.log<br>Data dir       : /var/lib/redis/6379<br>Executable     : /usr/local/bin/redis-server<br>Cli Executable : /usr/local/bin/redis-cli  </p>
+</blockquote>
+<h1 id="自定义登录脚本Redis-sh"><a href="#自定义登录脚本Redis-sh" class="headerlink" title="自定义登录脚本Redis.sh"></a>自定义登录脚本Redis.sh</h1><p>#/bin/sh</p>
+<p>cd redis<br>redis-cli -a password</p>
 
         </div>
 
@@ -204,7 +215,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-07-14T11:24:11.986Z" itemprop="dateUpdated">2017-07-14 19:24:11</time>
+    最后更新时间：<time datetime="2017-09-10T16:24:38.614Z" itemprop="dateUpdated">2017-09-11 00:24:38</time>
 </span><br>
 
 
@@ -229,6 +240,8 @@
 
         <div class="post-footer">
             
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Centos/">Centos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Redis/">Redis</a></li></ul>
+
 
             
 <div class="page-share-wrap">
@@ -237,7 +250,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&title=《Hello World》 — Carlos.Xie&pic=http://blog.xiehongchao.cn/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiehongchao.cn/2017/09/10/redisinstall/&title=《redis安装》 — Carlos.Xie&pic=http://blog.xiehongchao.cn/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -247,22 +260,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&title=《Hello World》 — Carlos.Xie&source=Better Wife , Better Life" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiehongchao.cn/2017/09/10/redisinstall/&title=《redis安装》 — Carlos.Xie&source=Better Wife , Better Life" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiehongchao.cn/2017/07/14/hello-world/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiehongchao.cn/2017/09/10/redisinstall/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — Carlos.Xie&url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&via=http://blog.xiehongchao.cn" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《redis安装》 — Carlos.Xie&url=http://blog.xiehongchao.cn/2017/09/10/redisinstall/&via=http://blog.xiehongchao.cn" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiehongchao.cn/2017/09/10/redisinstall/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -285,13 +298,20 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2017/07/14/My-New-Post/" id="post-prev" class="post-nav-link">
+      <a href="/2017/09/11/netvaluetype/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">My New Post</h4>
+        <h4 class="title">Net值类型和引用类型</h4>
       </a>
     </div>
   
 
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/09/06/hexocommand/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">hexo简单命令</h4>
+      </a>
+    </div>
   
 </nav>
 
@@ -383,7 +403,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&title=《Hello World》 — Carlos.Xie&pic=http://blog.xiehongchao.cn/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiehongchao.cn/2017/09/10/redisinstall/&title=《redis安装》 — Carlos.Xie&pic=http://blog.xiehongchao.cn/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -393,22 +413,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&title=《Hello World》 — Carlos.Xie&source=Better Wife , Better Life" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiehongchao.cn/2017/09/10/redisinstall/&title=《redis安装》 — Carlos.Xie&source=Better Wife , Better Life" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiehongchao.cn/2017/07/14/hello-world/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiehongchao.cn/2017/09/10/redisinstall/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — Carlos.Xie&url=http://blog.xiehongchao.cn/2017/07/14/hello-world/&via=http://blog.xiehongchao.cn" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《redis安装》 — Carlos.Xie&url=http://blog.xiehongchao.cn/2017/09/10/redisinstall/&via=http://blog.xiehongchao.cn" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiehongchao.cn/2017/07/14/hello-world/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiehongchao.cn/2017/09/10/redisinstall/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -419,7 +439,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACL0lEQVR42u3aS27DMAwFwNz/0um2AWr3kXTSWhqvDENxNF4Q/OjxiK/nt+voyfn68zdXf9W8MDAwbst4nl75mnyLR+/Pf/XD/2JgYGzASDZxtL66cvKGw+cYGBgY4zXnWz9PQDEwMDB6ATffRDVBxMDAwJgUsRNeEmRHxTMGBsbSjLzr/vn7t8w3MDAwbsV4Fq/kDdVQ3tvJy3swMDCWZuQBLkna8qZbXgbn+8HAwNiBkTfdqivzgUHypCLDwMBYh3HV2LLa6J/fH/IwMDAWYkyGiNXE8ar0EQMDYzdGNdRWj3/lpW/vXzAwMHZg5G366iaqpXKvbH7k59QwMDBuzjgKcJMjX3n52ht2vtxjYGAszUgSsmSjSck6KYZHXUMMDIwlGL2m26RJ1ytioyocAwNjOUY1CE5Sw+p2k9YbBgbGPow8vcsD9FVjzvJhCwwMjEUZvdZ8chgiHxhMQjYGBsbajOocsNfQrwb0/BNjYGDsw6hubl6gVkcIUSDGwMDYhtFMyOJAWU0xk/QRAwNjN0Y1TWwGx1Zw/2VEioGBsSXjvBD9g1Za9cgFBgbGEoxJsKs24PLvmo9RL4jZGBgY/57RC3PVNLGXLL5xwImBgXFDxmTEmB/nykeShcK1N03FwMC4LaPZjo9TzCQQTwpjDAwMjOTYVi9BrH6sywIuBgbGBozJgLN68CJaiYGBsQGjOgzIG2HVIUGeFGJgYOzDuOrYRBXTI40GmRgYGPdjfAE66rJQ6UOqTwAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJUlEQVR42u3aW67CIBQFUOc/6d4BmOregDcprH4ZU5TFx8l58HrFz/X23L3Tvn+36vWLBwMD47GM6+OT/2X7zfv3yXHcUjEwMA5gJAH07v27n545oHxvGBgYGO07SarXppgYGBgYaxl5AZzwMDAwMNoELm+ufS44k7U/rMUxMDAeyMi77v//+SfzDQwMjEcxrvJJficpbtvx55ddYWBgbM3IA9zMaDOH5WkfBgYGRruhfO2q0cIr6sBhYGDsw2jbXm2YTrY4dnWs6B1iYGA8ljFWmuarigHk0AgTAwPjHMZUnC43N9PCuz0mDAyMAxhj7f48+cuL2/yyRXR+GBgYWzDyIrYNr20DbiYoY2Bg7M2Yb3i14TLv7SefMTAwzmG0YXTmAtlY0vnlUDAwMLZmjN1VaNe2KWZ+uBgYGGcyVo0Yk1SvHZfW18UwMDC2YyThsg2+eaNt8LzHoj4GBsYDGXlAzEvKsUbe2E4wMDAw2hRtrGH3OcgWSSEGBsYBjLHGfbvFdswZpacYGBgHMNpg16aDY1c06h4hBgbGYYyxi1zLphPtoWNgYGzKuMqnjXIzV8SKwI2BgbE1YyzMtavasJ5sfcGcFgMD41GMmWsW82nlsmoUAwPjAMbM7YW2WbaqYP4y38DAwDiYkW8oL4Dzg1sWcDEwMA5gLJ5OfPzl6E0MDIwDGEkRO9ZuawcMeRsOAwPjHMZM6dg25sZSxry0xsDA2I7xByWqA/GWpmpkAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 
